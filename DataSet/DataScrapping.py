@@ -1,8 +1,7 @@
 import requests
 import os
-
-
 from bs4 import BeautifulSoup
+
 os.environ['REQUESTS_CA_BUNDLE'] = '/path/to/certificate.pem'
 
 # Function to scrape data from tourism websites
@@ -22,9 +21,29 @@ def scrape_tourism_website(url):
 # Function to count occurrences of keywords and calculate total score
 def calculate_score(text):
     # Keywords related to Environmental Impact, Community Empowerment, and Cultural Preservation
-    environmental_keywords = ['environment', 'sustainable', 'ecotourism', 'conservation']
-    community_keywords = ['community', 'empowerment', 'local', 'participation']
-    cultural_keywords = ['culture', 'heritage', 'tradition', 'cultural']
+    # Environmental Impact Keywords
+    environmental_keywords = [
+        'environment', 'sustainable', 'ecotourism', 'conservation', 
+        'biodiversity', 'carbon footprint', 'climate change', 'renewable energy', 
+        'waste management', 'pollution control', 'natural resources', 'habitat preservation',
+        'green practices', 'carbon emissions', 'renewable resources', 'wildlife protection',
+        'environmental stewardship', 'ecological balance', 'greenhouse gases', 'sustainability']
+
+    # Community Empowerment Keywords
+    community_keywords = [
+        'community', 'empowerment', 'local', 'participation',
+        'community development', 'social justice', 'grassroots', 'inclusive',
+        'volunteer', 'engagement', 'citizenship', 'collaboration', 
+        'capacity building', 'civic', 'resilience', 'empowering', 
+        'collective action', 'solidarity', 'social cohesion', 'community-driven']
+
+    # Cultural Preservation Keywords
+    cultural_keywords = [
+        'culture', 'heritage', 'tradition', 'cultural',
+        'cultural preservation', 'cultural diversity', 'cultural heritage', 'indigenous',
+        'cultural identity', 'cultural exchange', 'cultural practices', 'cultural traditions',
+        'cultural sites', 'cultural significance', 'cultural celebration', 'folklore',
+        'cultural artifacts', 'intangible cultural heritage', 'cultural conservation', 'cultural revival']
 
     # Count occurrences of keywords
     environmental_count = sum(text.lower().count(keyword) for keyword in environmental_keywords)
