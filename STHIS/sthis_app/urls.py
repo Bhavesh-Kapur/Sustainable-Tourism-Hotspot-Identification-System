@@ -6,5 +6,6 @@ from sthis_app import views
 urlpatterns= [
     path('register', views.register, name='register'),
     path('', views.home, name='home'),
-
+    path('admindashboard', views.admindashboard, name='admindashboard'),
+    path('locationList', views.locationList, name='locationList'),
 ]

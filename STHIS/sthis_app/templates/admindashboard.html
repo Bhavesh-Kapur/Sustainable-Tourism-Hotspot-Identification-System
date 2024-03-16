@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STHIS-SYSTEM</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'admindashboard.css' %}">
+</head>
+<body>
+    
+    <header>
+        <h1><i class=""></i>STHIS - SYSTEMS</h1>
+        <h2>Welcome Manager</h2>
+        <img src="{% static 'logo.png' %}" alt="" class="logo">
+        <div>
+
+    </div>
+            
+            <!-- Content section will go here based on the selected option from the sidebar -->
+
+    </header>
+   
+    <aside>
+        <header>
+            <div>
+                <i class="fas fa-bars"></i>Dashboard
+            </div>
+        </header>
+        <ul>
+            <li><h4><i class=""></i> </h4></li>
+            <ul>
+                <li><a href="{% url 'loginList' %}"><i class=""></i>List of Locations </a></li>
+
+
+            </ul>
+        </ul>
+        <ul>
+
+            <ul>
+
+
+            </ul>
+        </ul>
+        <ul>
+
+            <ul>
+
+
+
+
+            </ul>   
+        </ul>
+        <!-- <ul>
+            <li><h4><i class="fas fa-chart-line"></i>Analytics and Reporting</h4></li>
+            <ul>
+                <li><a href="/salesanalytics"><i class="fa fa-chart-line"></i>Sales Analytics</a></li>
+                <li><a href="inventoryreport.html"><i class="fa fa-file-alt"></i>Inventory Report</a></li>
+            </ul>
+        </ul> -->
+    </aside>
+
+    
+</body>
+</html>

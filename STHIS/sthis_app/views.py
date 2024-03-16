@@ -44,6 +44,12 @@ def register(request):
     else:
         return render(request, 'register.html')
 
+
+def admindashboard(request):
+    return render(request,'admindashboard.html')
+
+def locationList(request):
+    return render(request,'locationList.html')
 # def dashboard(request):
 #     # Logic for rendering the dashboard page
 #     return render(request, 'dashboard.html')
