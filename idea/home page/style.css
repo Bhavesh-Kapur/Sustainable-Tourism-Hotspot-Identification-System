@@ -4,9 +4,10 @@ body {
     margin: 0;
     padding: 0;
   }
+
   .main
   {
-    background-color: white;
+    background-color: #C8B282;
     margin: 0;
     padding: 20;
     color: black;
@@ -25,13 +26,13 @@ body {
 
   .navbar-container {
     padding: 10px; /* Adjust padding as needed */
-    text-align: center; /* Center-align the navbar */
+    text-align: right; /* Center-align the navbar */
     margin-bottom: 0;
   }
   
   .navbar {
     display: block;
-    background-color: green; /* Ensure the navbar stays in line with the container */
+    background-color: #6D9775; /* Ensure the navbar stays in line with the container */
   }
   
   .navbar ul {
@@ -51,9 +52,6 @@ body {
     color: black;
   }
   
-  .featured-destinations {
-    padding-top: 0; /* Remove top padding */
-  }
 
   .slideshow-container img {
     width: 100%;
