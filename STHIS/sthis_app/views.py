@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import User
+from .models import User,location
 import os
 
 
@@ -50,6 +50,28 @@ def admindashboard(request):
 
 def locationList(request):
     return render(request,'locationList.html')
+
+
+
+def destination(request):
+    return render(request,'destination.html')
+
+
+def addLocation(request):
+    if request.method=='POST':
+        c = location()
+        c.name = request.POST.get('name')
+        c.desc = request.POST.get('desc')
+        c.add = request.POST.get('add')
+        c.acti = request.POST.get('acti')
+        c.culture = request.POST.get('culture')
+        c.save()
+        print(c)
+        messages.success(request, f'New location added ' ,extra_tags='posted')
+        return redirect('addLocation')
+    return render(request, 'addLocation.html')
+    
+
 # def dashboard(request):
 #     # Logic for rendering the dashboard page
 #     return render(request, 'dashboard.html')
