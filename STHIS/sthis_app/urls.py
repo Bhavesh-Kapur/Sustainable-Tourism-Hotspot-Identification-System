@@ -10,4 +10,6 @@ urlpatterns= [
     path('locationList', views.locationList, name='locationList'),
     path('destination',views.destination, name='destination'),
     path('addLocation', views.addLocation, name="addLocation"),
+    path('locationList', views.locationList, name='locationList'),
+    path('login', views.login, name='login'),
 ]

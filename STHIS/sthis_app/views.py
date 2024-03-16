@@ -1,8 +1,9 @@
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from .models import User,location
+from .models import User
 import os
+from .models import location
 
 
 # Create your views here.
@@ -72,6 +73,16 @@ def addLocation(request):
     return render(request, 'addLocation.html')
     
 
+def locationList(request):
+    l=list(location.objects.all()) 
+    dic={'l':l}
+    print(dic)
+    return render(request,'locationList.html',dic)
+
+
+def login(request):
+    return render(request,'login.html')
+
 # def dashboard(request):
 #     # Logic for rendering the dashboard page
 #     return render(request, 'dashboard.html')
@@ -79,7 +90,7 @@ def addLocation(request):
 
 # from django.shortcuts import render, redirect
 # from django.contrib.auth import authenticate, login, logout
-# from .forms import RegistrationForm  # Import custom registration form
+# from .forms import RegistrationForm  # Import locationom registration form
 
 # def register(request):
 #     if request.method == 'POST':

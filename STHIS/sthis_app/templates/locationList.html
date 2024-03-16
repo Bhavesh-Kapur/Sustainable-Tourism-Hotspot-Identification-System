@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,25 +36,29 @@
     <table>
         <thead>
             <tr>
-                <td>Name</td>
-                <td>Rank</td>
-                <td>Type</td>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Description</th>
+                <!-- <th>Image</th> -->
+                <!-- <th>Message</th> -->
+                <th>Activity</th>
+                <th>Rank</th>
+                <!-- Add more columns for other car details -->
             </tr>
         </thead>
         <tbody>
-            <tr>
-            <td>acs</td>
-            <td>abc</td>
-            <td>adc</td>
-            <tr>
-            <td>acs</td>
-            <td>abc</td>
-            <td>adc</td>
-            <tr>
-            <td>acs</td>
-            <td>abc</td>
-            <td>adc</td>
-        </tr>
+            <!-- Loop through your cars data and populate the table rows -->
+            {% for l in l %}
+                <tr>
+                    <td>{{ l.name }}</td>
+                    <td>{{ l.add }}</td>
+                    <td>{{ l.desc }}</td>
+                    <!-- <td><img src="{{ car.image.url }}" alt="{{ car.make }} {{ car.model }}"></td> -->
+                    <td>{{ l.acti }}</td>
+                    <td>{{ l.rank }}</td>
+                    <!-- Add more columns for other car details -->
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
 </body>

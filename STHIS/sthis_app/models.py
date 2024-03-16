@@ -17,3 +17,12 @@ class location(models.Model):
     acti = models.CharField(max_length=1000)
     culture = models.CharField(max_length=1000)
 
+
+
+class imapct(models.Model):
+    ei = models.IntegerField()
+    ce = models.IntegerField()
+    cp = models.IntegerField()
+    name = models.CharField(max_length= 100)
+    rank = models.IntegerField()
+
