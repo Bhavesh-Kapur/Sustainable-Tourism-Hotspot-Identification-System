@@ -1,0 +1,156 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .main
+  {
+    background-color: white;
+    margin: 0;
+    padding: 20;
+    color: black;
+  }
+  
+  .hero {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    width: 60%;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+  }
+  
+  .filters {
+    width: 30%;
+  }
+  
+  .filters h4 {
+    margin-bottom: 10px;
+  }
+  
+  .filters ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filters li {
+    margin-bottom: 5px;
+  }
+  
+  .filters a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .featured-destinations {
+    padding: 20px;
+  }
+  
+  .featured-destinations h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .destination-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    padding: 10px;
+  }
+  
+  .card p {
+    font-size: 0.9em;
+    padding: 0 10px 10px;
+  }
+  
+  .about-us {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-us p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+  }
+  
+  .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
