@@ -31,15 +31,13 @@
         <img src="{% static '3.jpg' %}" style="width:100%">
         <div class="text">Caption Text</div>
       </div>
-  
-      <div class="mySlides fade">
 
+      <div class="mySlides fade">
         <img src="{% static '2.jpg' %}" style="width:100%">
         <div class="text">Caption Two</div>
       </div>
-  
-      <div class="mySlides fade">
 
+      <div class="mySlides fade">
         <img src="{% static '1.jpg' %}" style="width:100%">
         <div class="text">Caption Three</div>
       </div>
@@ -61,15 +59,18 @@
   <section class="search-filter">
     <div class="search-bar">
       <input type="text" placeholder="Search destinations...">
+      <button class="my-button">Search</button>
     </div>
-    <!--<div class="filters">
-      <h4>Filter by:</h4>
-      <ul>
-        <li><a href="#">Travel Style</a></li>
-        <li><a href="#">Interests</a></li>
-        <li><a href="#">Sustainability Focus</a></li>
-      </ul>
-    </div>-->
+    <!-- Filters dropdown -->
+    <div class="filters">
+        <h4>Filter by</h4>
+        <div class="dropdown-content">
+            <a href="#">Travel Style</a>
+            <a href="#">Interests</a>
+            <a href="#">Sustainability Focus</a>
+        </div>
+    </div>
+</form>
   </section>
 
   <section class="featured-destinations">
