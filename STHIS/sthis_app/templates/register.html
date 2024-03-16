@@ -71,9 +71,11 @@
 
     <h1>Travel far, travel wide, travel responsibly Register Now!</h1>
 
-    <form id="registrationForm" onsubmit="return validateForm()">
+    <form id="registrationForm" action="register" method="POST">
+        {% csrf_token %}
+
         <label for="Name">Full Name:</label>
-        <input type="text" id="Name" name="Name" required>
+        <input type="text" id="name" name="name" required>
 
         <label for="email">Email address:</label>
         <input type="email" id="email" name="email" required>
@@ -92,20 +94,8 @@
             <option value="UK">UK</option>
             <option value="USA">USA</option>
         </select>
-
-
-
-        <label for="age">Age Range:</label>
-        <select id="age" name="age">
-            <option value="select">select age</option>
-            <option value="under18">Under 18</option>
-            <option value="18-24">18-40</option>
-            <option value="25-34">above 40</option>
-        </select>
-
-        
         <input type="submit" value="Register" class="button">
-
+</form>
 
 </body>
 </html>
