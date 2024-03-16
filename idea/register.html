@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('register.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            background-image: url('regist.jpg');
+            background-size: cover;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #4caf50;
+        }
+
+        .button {
+            background-color: #4caf89;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        /* .button:hover {
+            background-color: #34c018;
+        } */
+    </style>
+</head>
+<body>
+
+    <h1>Travel far, travel wide, travel responsibly Register Now!</h1>
+
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="Name">Full Name:</label>
+        <input type="text" id="Name" name="Name" required>
+
+        <label for="email">Email address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" required>
+
+        <label for="country">Country of Residence:</label>
+        <select id="country" name="country">
+            <option value="select">Select country</option>
+            <option value="India">India</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+        </select>
+
+
+
+        <label for="age">Age Range:</label>
+        <select id="age" name="age">
+            <option value="select">select age</option>
+            <option value="under18">Under 18</option>
+            <option value="18-24">18-40</option>
+            <option value="25-34">above 40</option>
+        </select>
+
+        
+        <input type="submit" value="Register" class="button">
+
+
+</body>
+</html>
