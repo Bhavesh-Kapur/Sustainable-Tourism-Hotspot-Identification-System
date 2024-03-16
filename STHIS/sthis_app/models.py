@@ -13,7 +13,7 @@ class User(models.Model):
 class location(models.Model):
     name = models.CharField(max_length=100)
     desc = models.CharField(max_length=1000)
-    add = models.CharField(max_length=200)
+    add = models.CharField(max_length=200, null=True)
     acti = models.CharField(max_length=1000)
-    culture = models.CharField(max_length=100000)
+    culture = models.CharField(max_length=1000)
 
