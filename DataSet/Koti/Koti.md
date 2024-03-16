@@ -20,6 +20,3 @@ Historical Sites: Nearby historical sites include the ancient temples of Tapkesh
 Museum: While there are no museums within Koti Village itself, visitors can explore museums in Dehradun city, such as the Forest Research Institute Museum, showcasing the region's biodiversity and forestry heritage.
 
 Businesses: Local businesses in Koti Village predominantly revolve around agriculture and handicrafts, offering visitors the opportunity to purchase authentic local produce and artisanal goods.
-
-Environmental Impact:
-Koti Village is committed to preserving its natural environment and promoting sustainable tourism practices. Efforts are made to minimize waste generation, conserve water resources, and protect the biodiversity of the surrounding forests. Visitors are encouraged to respect nature and minimize their ecological footprint during their stay in the village.
