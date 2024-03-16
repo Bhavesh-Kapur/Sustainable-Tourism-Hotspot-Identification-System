@@ -50,6 +50,9 @@ def admindashboard(request):
 
 def locationList(request):
     return render(request,'locationList.html')
+
+def destination(request):
+    return render(request,'destination.html')
 # def dashboard(request):
 #     # Logic for rendering the dashboard page
 #     return render(request, 'dashboard.html')
